@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background: url("tm.jpeg");
+    background-size: cover;
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;                
+  }
+  .task-manager {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;   
+    text-align: center; 
+  }
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #355d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2845c5;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+  
+  li {
+    background-color: #fafafa;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  button.delete, button.edit {
+    background-color: #a05c5c;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.edit {
+    background-color: #958059;
+  }
+  
+  button.delete:hover, button.edit:hover {
+    opacity: 0.8;
+  }
+  @media (max-width: 500px) {
+    .task-manager {
+      width: 90%;  
+    }
+}
